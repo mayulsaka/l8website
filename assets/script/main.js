@@ -30,5 +30,5 @@ $('.visual').slick({
             centerMode: true,
             centerPadding: "8%",
         },
-    }, ],
+    },],
 });
