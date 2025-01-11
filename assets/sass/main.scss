@@ -1281,12 +1281,10 @@ li {
 	&__item-group {
 		width: 100%;
 		margin: auto;
-		margin-bottom: vw(22);
 		border-top: 1px solid #ddd;
 		line-height: 1.5;
 		@include mq() {
 			max-width: vwt(900);
-			margin-bottom: 0;
 		}
 		@include mq(lg) {
 			max-width: px2Rem(900);
@@ -1368,9 +1366,11 @@ li {
 		font-size: vw(14);
 		@include mq() {
 			flex-shrink: 0;
+			padding-bottom: vwt(2);
 			font-size: vwt(13);
 		}
 		@include mq(lg) {
+			padding-bottom: px2Rem(2);
 			font-size: px2Rem(13);
 		}
 	}
@@ -1412,6 +1412,7 @@ li {
 		width: vw(300);
 		height: vw(66);
 		margin: auto;
+		margin-top: vw(25);
 		margin-bottom: vw(10);
 		text-align: center;
 		letter-spacing: 0.1em;
@@ -1444,18 +1445,18 @@ li {
 	}
 
 	&__news-link:hover {
-		margin-top: vw(3);
-		margin-bottom: vw(7);
+		margin-top: vw(30);
+		margin-bottom: vw(5);
 		opacity: 1;
 		color: #fff;
 		box-shadow: none;
 		@include mq() {
-			margin-top: vwt(3);
-			margin-bottom: vwt(7);
+			margin-top: vwt(33);
+			margin-bottom: vwt(5);
 		}
 		@include mq(lg) {
-			margin-top: px2Rem(3);
-			margin-bottom: px2Rem(7);
+			margin-top: px2Rem(33);
+			margin-bottom: px2Rem(5);
 		}
 	}
 }

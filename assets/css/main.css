@@ -1763,7 +1763,6 @@ li {
 .news__item-group {
 	width: 100%;
 	margin: auto;
-	margin-bottom: 5.641025641vw;
 	border-top: 1px solid #ddd;
 	line-height: 1.5;
 }
@@ -1771,7 +1770,6 @@ li {
 @media screen and (min-width: 768px) {
 	.news__item-group {
 		max-width: 75vw;
-		margin-bottom: 0;
 	}
 }
 
@@ -1904,12 +1902,14 @@ li {
 	.news__date {
 		-ms-flex-negative: 0;
 		flex-shrink: 0;
+		padding-bottom: 0.1666666667vw;
 		font-size: 1.0833333333vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__date {
+		padding-bottom: 0.125rem;
 		font-size: 0.8125rem;
 	}
 }
@@ -1963,6 +1963,7 @@ li {
 	width: 76.9230769231vw;
 	height: 16.9230769231vw;
 	margin: auto;
+	margin-top: 6.4102564103vw;
 	margin-bottom: 2.5641025641vw;
 	text-align: center;
 	letter-spacing: 0.1em;
@@ -2004,8 +2005,8 @@ li {
 }
 
 .news__news-link:hover {
-	margin-top: 0.7692307692vw;
-	margin-bottom: 1.7948717949vw;
+	margin-top: 7.6923076923vw;
+	margin-bottom: 1.2820512821vw;
 	opacity: 1;
 	color: #fff;
 	-webkit-box-shadow: none;
@@ -2014,15 +2015,15 @@ li {
 
 @media screen and (min-width: 768px) {
 	.news__news-link:hover {
-		margin-top: 0.25vw;
-		margin-bottom: 0.5833333333vw;
+		margin-top: 2.75vw;
+		margin-bottom: 0.4166666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__news-link:hover {
-		margin-top: 0.1875rem;
-		margin-bottom: 0.4375rem;
+		margin-top: 2.0625rem;
+		margin-bottom: 0.3125rem;
 	}
 }
 
