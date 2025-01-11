@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+</head>
 
 <body>
 
@@ -25,13 +26,13 @@
 
     <header class="header">
         <div class="header__container">
-                    <h1><img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></h1>
+            <h1><img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></h1>
             <nav class="header__nav nav" id="js-nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-list-item sp-only"><a href="/" class="header__nav-link">トップ</a></li>
-                        <li class="header__nav-list-item"><a href="/price" class="header__nav-link">価格・スペック</a></li>
-                        <li class="header__nav-list-item"><a href="/faq" class="header__nav-link">よくあるご質問</a></li>
-                    </ul>
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item sp-only"><a href="/" class="header__nav-link">トップ</a></li>
+                    <li class="header__nav-list-item"><a href="/price" class="header__nav-link">価格・スペック</a></li>
+                    <li class="header__nav-list-item"><a href="/faq" class="header__nav-link">よくあるご質問</a></li>
+                </ul>
             </nav>
             <button class="header__hamburger hamburger" id="js-hamburger">
                 <span></span>
@@ -52,12 +53,12 @@
         <section class=" main-visual">
             <div class="main-visual__container">
                 <div class="main-visual__info">
-                        <h2 class="main-visual__title">持続可能な農業を目指す</h2>
-                        <p class="main-visual__text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット<br class="sp-inline-only">・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
+                    <h2 class="main-visual__title">持続可能な農業を目指す</h2>
+                    <p class="main-visual__text">キラメキファームは革新的デザインの農業機器で未来の農業を実現。ビッグデータ・自動運転ロボット<br class="sp-inline-only">・リジェネラティブ農業で環境に優しい効率化を目指す。</p>
                 </div>
                 <picture>
                     <source srcset="/assets/image/top/top_cover_img.png" media="(min-width: 768px)">
-                    <img class="main-visual__image" src="/assets/image/top/top_cover_img_sp.png" alt="広大な緑の農場とトラクターの写真">
+                    <img class="main-visual__image" src="/assets/image/top/top_cover_img_sp.png" alt="">
                 </picture>
             </div>
         </section>
@@ -83,11 +84,7 @@
                             イノベーションを起こすことで農業に新たな価値を生み出し、地球環境保全に貢献することを目指しています。</p>
                     </div>
                     <div class="about__image">
-                        <!-- <picture>
-                            <source srcset="/assets/image/top/top_about_us_img.png" media="(min-width: 768px)">
-                            <img class="pc-only" src="/assets/image/top/top_about_us_img_sp.png" alt="両手で土をすくう写真">
-                        </picture> -->
-                        <img class="pc-only" src="/assets/image/top/top_about_us_img.png" alt="両手で土をすくう写真">
+                        <img class="pc-only" src="/assets/image/top/top_about_us_img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -138,26 +135,36 @@
                     <span class="products__title-main">製品・サービス紹介</span>
                 </h2>
                 <div class="products__wrapper">
-                    <div class="products__product-item products__item--01">
-                        <img class="products__product-image products__image--01" src="/assets/image/top/top_product_img_01.png" alt="">
-                        <h3 class="products__product-title products__title--01">エネルギーセイバー<br>農業ドローン</h3>
-                    </div>
-                    <div class="products__product-item products__item--02">
-                        <img class="products__product-image products__image--02" src="/assets/image/top/top_product_img_02.png" alt="">
-                        <h3 class="products__product-title products__title--02">プログレッシブ<br class="sp-inline-only">ハー<br class="pc-inline-only">ベストボット</h3>
-                    </div>
-                    <div class="products__product-item products__item--03">
-                        <img class="products__product-image products__image--03" src="/assets/image/top/top_product_img_03.png" alt="">
-                        <h3 class="products__product-title products__title--03">フューチャーフ<br class="pc-inline-only">ァーム<br class="sp-inline-only">マスター</h3>
-                    </div>
-                    <div class="products__product-item products__item--04">
-                        <img class="products__product-image products__image--04" src="/assets/image/top/top_product_img_04.png" alt="">
-                        <h3 class="products__product-title products__title--04">ミラクルグロー<br class="pc-inline-only">アシス<br class="sp-inline-only">ト</h3>
-                    </div>
-                    <div class="products__product-item products__item--05">
-                        <img class="products__product-image products__image--05" src="/assets/image/top/top_product_img_05.png" alt="">
-                        <h3 class="products__product-title products__title--05">インテリジェン<br class="pc-inline-only">トプラ<br class="sp-inline-only">ンター</h3>
-                    </div>
+                    <a href="#" class="products__product-link">
+                        <div class="products__product-item products__item--01">
+                            <img class="products__product-image products__image--01" src="/assets/image/top/top_product_img_01.png" alt="">
+                            <h3 class="products__product-title products__title--01">エネルギーセイバー<br>農業ドローン</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="products__product-link">
+                        <div class="products__product-item products__item--02">
+                            <img class="products__product-image products__image--02" src="/assets/image/top/top_product_img_02.png" alt="">
+                            <h3 class="products__product-title products__title--02">プログレッシブ<br class="sp-inline-only">ハー<br class="pc-inline-only">ベストボット</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="products__product-link">
+                        <div class="products__product-item products__item--03">
+                            <img class="products__product-image products__image--03" src="/assets/image/top/top_product_img_03.png" alt="">
+                            <h3 class="products__product-title products__title--03">フューチャーフ<br class="pc-inline-only">ァーム<br class="sp-inline-only">マスター</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="products__product-link">
+                        <div class="products__product-item products__item--04">
+                            <img class="products__product-image products__image--04" src="/assets/image/top/top_product_img_04.png" alt="">
+                            <h3 class="products__product-title products__title--04">ミラクルグロー<br class="pc-inline-only">アシス<br class="sp-inline-only">ト</h3>
+                        </div>
+                    </a>
+                    <a href="#" class="products__product-link">
+                        <div class="products__product-item products__item--05">
+                            <img class="products__product-image products__image--05" src="/assets/image/top/top_product_img_05.png" alt="">
+                            <h3 class="products__product-title products__title--05">インテリジェン<br class="pc-inline-only">トプラ<br class="sp-inline-only">ンター</h3>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -172,6 +179,7 @@
                     <span class="cases__title-main">お客様の事例紹介</span>
                 </h2>
                 <div class="cases__wrapper">
+                    <a href="#" class="cases__case-link">
                     <div class="cases__item">
                         <picture>
                             <source srcset="/assets/image/top/top_case_img_01.png" media="(min-width: 768px)">
@@ -179,6 +187,8 @@
                         </picture>
                         <h3 class="cases__case-title">利用開始後約1年で売り上げが150％増加</h3>
                     </div>
+                </a>
+                <a href="#" class="cases__case-link">
                     <div class="cases__item">
                         <picture>
                             <source srcset="/assets/image/top/top_case_img_02.png" media="(min-width: 768px)">
@@ -186,18 +196,21 @@
                         </picture>
                         <h3 class="cases__case-title">無駄な作業が減り、30％のコストカットに成功</h3>
                     </div>
+                </a>
+                <a href="#" class="cases__case-link">
                     <div class="cases__item">
                         <picture>
                             <source srcset="/assets/image/top/top_case_img_03.png" media="(min-width: 768px)">
                             <img class="cases__case-image" src="/assets/image/top/top_case_img_03_sp.png" alt="">
                         </picture>
-                        <h3 class="cases__case-title">24時間対応のサポートデスクがあるのも安<br class="pc-only">心です</h3>
+                        <h3 class="cases__case-title">24時間対応のサポートデスクがあるのも安心です</h3>
                     </div>
+                </a>
                 </div>
             </div>
         </section>
 
-        
+
         <!-- お知らせ-->
 
         <div class="news">
@@ -206,50 +219,50 @@
                     <span class="news__title-sub">News</span>
                     <span class="news__title-main">お知らせ</span>
                 </h2>
-                <div class="new__wrapper">
+                <!-- <div class="new__wrapper"> -->
                     <dl class="news__item-group">
                         <div class="news__item">
-                          <dt class="news__date">2023.05.15<span class="news__tag">お知らせ</span></dt>
-                          <dd class="news__data">
-                            <a href="#" class="news__link">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a>
-                          </dd>
+                            <dt class="news__date">2023.05.15<span class="news__tag">お知らせ</span></dt>
+                            <dd class="news__data">
+                                <a href="#" class="news__link">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a>
+                            </dd>
                         </div>
                         <div class="news__item">
-                          <dt class="news__date">2023.04.05<span class="news__tag">ニュースリリース</span></dt>
-                          <dd class="news__data">
-                            <a href="#" class="news__link">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a>
-                          </dd>
+                            <dt class="news__date">2023.04.05<span class="news__tag">ニュースリリース</span></dt>
+                            <dd class="news__data">
+                                <a href="#" class="news__link">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a>
+                            </dd>
                         </div>
                         <div class="news__item">
-                          <dt class="news__date">2023.03.12<span class="news__tag">ニュースリリース</span></dt>
-                          <dd class="news__data">
-                            <a href="#" class="news__link">害虫撃退！キラメキファームの自然環境に優しい取り組み</a>
-                          </dd>
+                            <dt class="news__date">2023.03.12<span class="news__tag">ニュースリリース</span></dt>
+                            <dd class="news__data">
+                                <a href="#" class="news__link">害虫撃退！キラメキファームの自然環境に優しい取り組み</a>
+                            </dd>
                         </div>
-                          <div class="news__item">
+                        <div class="news__item">
                             <dt class="news__date">2023.02.01<span class="news__tag">お知らせ</span></dt>
                             <dd class="news__data">
-                              <a href="#" class="news__link">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a>
+                                <a href="#" class="news__link">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a>
                             </dd>
-                          </div>
-                          <div class="news__item">
+                        </div>
+                        <div class="news__item">
                             <dt class="news__date">2023.01.25<span class="news__tag">ニュースリリース</span></dt>
                             <dd class="news__data">
-                              <a href="#" class="news__link">キラメキファーム、無農薬野菜で子供たちの未来を支える</a>
+                                <a href="#" class="news__link">キラメキファーム、無農薬野菜で子供たちの未来を支える</a>
                             </dd>
-                          </div>
-                          <div class="news__item">
+                        </div>
+                        <div class="news__item">
                             <dt class="news__date">2023.01.08<span class="news__tag">お知らせ</span></dt>
                             <dd class="news__data">
-                              <a href="#" class="news__link">キラメキ農法で収穫量2倍！革新的な農業技術が話題</a>
+                                <a href="#" class="news__link">キラメキ農法で収穫量2倍！革新的な農業技術が話題</a>
                             </dd>
-                          </div>
-                      </dl>
+                        </div>
+                    </dl>
                 </div>
-                <div class="news__reservation-text">
-                    <a href="/news" class="news__reservation-link">ニュース一覧へ</a>
+                <div class="news__news-button">
+                    <a href="/news" class="news__news-link">ニュース一覧へ</a>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
 
     </main>
@@ -259,8 +272,7 @@
     <footer class="footer">
         <div class="footer__footer-container">
             <ul class="footer__footer-list">
-                <li class="footer__footer-list-item"><a href="/company/" class="footer__footer-link">価格・スペック</a></li>
-                <li class="footer__footer-list-item"><a href="/contact/" class="footer__footer-link">｜</a></li>
+                <li class="footer__footer-list-item"><a href="/company/" class="footer__footer-link footer__footer-link-bar">価格・スペック</a></li>
                 <li class="footer__footer-list-item"><a href="/contact/" class="footer__footer-link">よくあるご質問</a></li>
             </ul>
         </div>
