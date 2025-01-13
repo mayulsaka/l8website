@@ -31,7 +31,7 @@
             <nav class="header__nav nav" id="js-nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-list-item sp-only"><a href="/" class="header__nav-link">トップ</a></li>
-                    <li class="header__nav-list-item"><a href="/price" class="header__nav-link inactive-link">価格・スペック</a></li>
+                    <li class="header__nav-list-item"><a href="/price" class="header__nav-link header__nav-link-current">価格・スペック</a></li>
                     <li class="header__nav-list-item"><a href="/faq" class="header__nav-link">よくあるご質問</a></li>
                 </ul>
             </nav>
@@ -70,7 +70,7 @@
             <div class="breadcrumb--price__container">
                 <ul class="breadcrumb--price__list">
                     <li class="breadcrumb--price__item"><a href="/" class="breadcrumb--price__link">トップ</a></li>
-                    <li class="breadcrumb--price__item"><img class="breadcrumb--price__arrow" src="/assets/image/arrow.svg" alt=""></li>
+                    <li class="breadcrumb--price__item"><img class="breadcrumb--price__arrow" src="/assets/image/breadcrumb_arrow.svg" alt=""></li>
                     <li class="breadcrumb--price__item">価格・スペック</li>
                 </ul>
             </div>
@@ -100,33 +100,27 @@
             <div class="feature--price__container">
                 <h2 class="feature--price__title">特長</h2>
                 <div class="feature--price__wrapper">
-                    <a href="#" class="feature--price__feature-link">
-                        <div class="feature--price__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_feature_img_01.png" media="(min-width: 768px)">
-                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_01_sp.png" alt="">
-                            </picture>
-                            <p class="feature--price__feature-title">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
-                        </div>
-                    </a>
-                    <a href="#" class="feature--price__feature-link">
-                        <div class="feature--price__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_feature_img_02.png" media="(min-width: 768px)">
-                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_02_sp.png" alt="">
-                            </picture>
-                            <p class="feature--price__feature-title">高精度のカメラやセンサーを搭載しており<br class="sp-inline-only">、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
-                        </div>
-                    </a>
-                    <a href="#" class="feature--price__feature-link">
-                        <div class="feature--price__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_feature_img_03.png" media="(min-width: 768px)">
-                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_03_sp.png" alt="">
-                            </picture>
-                            <p class="feature--price__feature-title">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の<br class="sp-inline-only">過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
-                        </div>
-                    </a>
+                    <div class="feature--price__item">
+                        <picture>
+                            <source srcset="/assets/image/price/price_feature_img_01.png" media="(min-width: 768px)">
+                            <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_01_sp.png" alt="">
+                        </picture>
+                        <p class="feature--price__feature-title">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                    </div>
+                    <div class="feature--price__item">
+                        <picture>
+                            <source srcset="/assets/image/price/price_feature_img_02.png" media="(min-width: 768px)">
+                            <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_02_sp.png" alt="">
+                        </picture>
+                        <p class="feature--price__feature-title">高精度のカメラやセンサーを搭載しており、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                    </div>
+                    <div class="feature--price__item">
+                        <picture>
+                            <source srcset="/assets/image/price/price_feature_img_03.png" media="(min-width: 768px)">
+                            <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_03_sp.png" alt="">
+                        </picture>
+                        <p class="feature--price__feature-title">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+                    </div>
                 </div>
             </div>
         </section>
