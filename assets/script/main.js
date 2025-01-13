@@ -15,20 +15,28 @@ $(window).on('resize', function () {
 
 // ---------- スライダー ---------- 
 
-// $('.visual').slick({
-//     dots: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3,
-//     autoplay: false,
-//     autoplaySpeed: 5000,
-//     arrows: false,
-//     responsive: [{
-//         breakpoint: 767.9,
-//         settings: {
-//             slidesToShow: 1,
-//             slidesToScroll: 1,
-//             centerMode: true,
-//             centerPadding: "8%",
-//         },
-//     },],
-// });
+let mySwiper = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true,
+    },
+    initialSlide: 1,
+    speed: 1000,
+    effect: 'fade',
+    crossFade: true,
+});
+
+
+// ---------- アコーディオン ---------- 
+
+$(function () {
+    $('.js-accordion_title').click(function () {
+        $(this).next('.js-accordion_inner').slideToggle();
+        $(this).toggleClass("open");
+    });
+});

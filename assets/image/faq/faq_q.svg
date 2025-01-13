@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="21" viewBox="0 0 25 21">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 24px;
+        fill: #168352;
+        font-family: Montserrat;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <text id="Q." class="cls-1" x="-1.003" y="16.667">Q.</text>
+</svg>

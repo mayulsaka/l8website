@@ -12,8 +12,7 @@
     <meta property="og:site_name" content="Kirameki Farm">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +25,12 @@
 
     <header class="header">
         <div class="header__container">
-            <h1><img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></h1>
+            <a href="/" class="header__title-link">
+                <h1><img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></h1>
+            </a>
             <nav class="header__nav nav" id="js-nav">
                 <ul class="header__nav-list">
-                    <li class="header__nav-list-item sp-only"><a href="/" class="header__nav-link">トップ</a></li>
+                    <li class="header__nav-list-item sp-only">トップ</li>
                     <li class="header__nav-list-item"><a href="/price" class="header__nav-link">価格・スペック</a></li>
                     <li class="header__nav-list-item"><a href="/faq" class="header__nav-link">よくあるご質問</a></li>
                 </ul>
@@ -213,13 +214,12 @@
 
         <!-- お知らせ-->
 
-        <div class="news">
+        <section class="news">
             <div class="news__container">
                 <h2 class="news__title">
                     <span class="news__title-sub">News</span>
                     <span class="news__title-main">お知らせ</span>
                 </h2>
-                <!-- <div class="new__wrapper"> -->
                 <dl class="news__item-group">
                     <div class="news__item">
                         <dt class="news__date">2023.05.15<span class="news__tag">お知らせ</span></dt>
@@ -262,28 +262,26 @@
             <div class="news__news-button">
                 <a href="/news" class="news__news-link">ニュース一覧へ</a>
             </div>
-            <!-- </div> -->
-        </div>
+        </section>
 
     </main>
 
     <!-- フッター -->
 
     <footer class="footer">
-        <div class="footer__footer-container">
+        <div class="footer__container">
             <ul class="footer__footer-list">
-                <li class="footer__footer-list-item"><a href="/company/" class="footer__footer-link footer__footer-link-bar">価格・スペック</a></li>
-                <li class="footer__footer-list-item"><a href="/contact/" class="footer__footer-link">よくあるご質問</a></li>
+                <li class="footer__footer-list-item footer__footer-link-bar"><a href="/price" class="footer__footer-link">価格・スペック</a></li>
+                <li class="footer__footer-list-item"><a href="/faq" class="footer__footer-link">よくあるご質問</a></li>
             </ul>
         </div>
     </footer>
 
 
-
     <!-- jsファイル -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/script/main.js"></script>
 
 </body>

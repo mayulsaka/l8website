@@ -3,17 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>持続可能な未来農業を実現 | Kirameki Farm | 製品・サービス紹介</title>
+    <title>持続可能な未来農業を実現 | Kirameki Farm</title>
     <meta name="description" content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
-    <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm | 製品・サービス紹介">
+    <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
     <meta property="og:description" content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://example.com">
     <meta property="og:site_name" content="Kirameki Farm">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +25,13 @@
 
     <header class="header">
         <div class="header__container">
-            <h1><img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm"></h1>
+            <a href="/" class="header__title-link">
+                <img class="header__logo-img" src="/assets/image/header_logo.svg" alt="Kirameki Farm">
+            </a>
             <nav class="header__nav nav" id="js-nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-list-item sp-only"><a href="/" class="header__nav-link">トップ</a></li>
-                    <li class="header__nav-list-item"><a href="/price" class="header__nav-link">価格・スペック</a></li>
+                    <li class="header__nav-list-item">価格・スペック</li>
                     <li class="header__nav-list-item"><a href="/faq" class="header__nav-link">よくあるご質問</a></li>
                 </ul>
             </nav>
@@ -50,27 +51,82 @@
 
         <!-- メインビジュアル -->
 
-        <section class=" main-visual">
-            <div class="main-visual__container">
-                <div class="main-visual__info">
-                    <h1 class="main-visual__title">価格・スペック</h1>
-                </div>
+        <section class="main-visual--price">
+            <div class="main-visual--price__container">
                 <picture>
                     <source srcset="/assets/image/price/price_cover_img.png" media="(min-width: 768px)">
-                    <img class="main-visual__image" src="/assets/image/price/price_cover_img_sp.png" alt="">
+                    <img class="main-visual--price__image" src="/assets/image/price/price_cover_img_sp.png" alt="">
                 </picture>
+                <div class="main-visual--price__title">
+                    <h1 class="main-visual--price__title-text">価格・スペック</h1>
+                </div>
             </div>
         </section>
+
+
+        <!-- パンくず -->
+
+        <div class="breadcrumb--price">
+            <div class="breadcrumb--price__container">
+                <ul class="breadcrumb--price__list">
+                    <li class="breadcrumb--price__item"><a href="/" class="breadcrumb--price__link">トップ</a></li>
+                    <li class="breadcrumb--price__item"><img class="breadcrumb--price__arrow" src="/assets/image/arrow.svg" alt=""></li>
+                    <li class="breadcrumb--price__item">価格・スペック</li>
+                </ul>
+            </div>
+        </div>
+
 
         <!-- ギャラリー -->
 
         <section class="gallery">
             <div class="gallery__container">
-                <h2 class="gallery__title">
-                    ギャラリー
-                </h2>
-                <div class="gallery__wrapper">
-                        <img class="pc-only" src="/assets/image/price/price_gallery_us_img.png" alt="">
+                <h2 class="gallery__title">ギャラリー</h2>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img class="" src="/assets/image/price/price_carousel_01.png" alt=""></div>
+                        <div class="swiper-slide"><img class="" src="/assets/image/price/price_carousel_02.png" alt=""></div>
+                        <div class="swiper-slide"><img class="" src="/assets/image/price/price_carousel_03.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 特徴 -->
+
+        <section class="feature--price">
+            <div class="feature--price__container">
+                <h2 class="feature--price__title">特長</h2>
+                <div class="feature--price__wrapper">
+                    <a href="#" class="feature--price__feature-link">
+                        <div class="feature--price__item">
+                            <picture>
+                                <source srcset="/assets/image/price/price_feature_img_01.png" media="(min-width: 768px)">
+                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_01_sp.png" alt="">
+                            </picture>
+                            <p class="feature--price__feature-title">自動操縦が可能で、短時間で大量の農作物を監視、収穫、播種、散布などの作業ができます。</p>
+                        </div>
+                    </a>
+                    <a href="#" class="feature--price__feature-link">
+                        <div class="feature--price__item">
+                            <picture>
+                                <source srcset="/assets/image/price/price_feature_img_02.png" media="(min-width: 768px)">
+                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_02_sp.png" alt="">
+                            </picture>
+                            <p class="feature--price__feature-title">高精度のカメラやセンサーを搭載しており<br class="sp-inline-only">、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
+                        </div>
+                    </a>
+                    <a href="#" class="feature--price__feature-link">
+                        <div class="feature--price__item">
+                            <picture>
+                                <source srcset="/assets/image/price/price_feature_img_03.png" media="(min-width: 768px)">
+                                <img class="feature--price__feature-image" src="/assets/image/price/price_feature_img_03_sp.png" alt="">
+                            </picture>
+                            <p class="feature--price__feature-title">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の<br class="sp-inline-only">過剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -80,209 +136,138 @@
 
         <section class="price">
             <div class="price__container">
-                <h2 class="price__title">
-                    メーカー希望小売価格
-                </h2>
-                <div class="price__wrapper">
-                    <p class="price__price"> ¥550,000<span class="tax">（税込）</span></p>
+                <h2 class="price__title">メーカー希望小売価格</h2>
+                <p class="price__price montserrat-semibold"> ¥550,000<span class="price__tax">（税込）</span></p>
+            </div>
+        </section>
+
+
+        <!-- スペック-->
+
+        <section class="spec">
+            <div class="spec__container">
+                <h2 class="spec__title">スペック</h2>
+                <div class="spec__wrapper">
+                    <h3 class="spec__title-sub">
+                        機体
+                    </h3>
+                    <table class="spec__table-pc pc-only">
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">ドローン名</th>
+                            <td class="spec__table-pc-detail">アグリ・ファルコン</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">製品番号</th>
+                            <td class="spec__table-pc-detail">AGF-100</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">飛行時間</th>
+                            <td class="spec__table-pc-detail">60 分</td>
+                        </tr>
+                        <tr class="spec__table-items">
+                            <th class="spec__table-pc-title">最大積載量</th>
+                            <td class="spec__table-pc-detail">5 kg</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">操作距離</th>
+                            <td class="spec__table-pc-detail">3 km</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">機体重量</th>
+                            <td class="spec__table-pc-detail">8 kg</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">機体寸法</th>
+                            <td class="spec__table-pc-detail">150 x 150 x 40 cm</td>
+                        </tr>
+                        <tr class="spec__table-pc-items">
+                            <th class="spec__table-pc-title">機能・特徴</th>
+                            <td class="spec__table-pc-detail">自動操縦、植物生育モニタリング、農薬散布</td>
+                        </tr>
+                    </table>
+
+                    <table class="spec__table-sp sp-only">
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">ドローン名</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">アグリ・ファルコン</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">製品番号</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">AGF-100</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">飛行時間</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">60 分</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">最大積載量</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">5 kg</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">操作距離</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">3 km</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">機体重量</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">8 kg</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">機体寸法</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">150 x 150 x 40 cm</td>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <th class="spec__table-sp-title">機能・特徴</th>
+                        </tr>
+                        <tr class="spec__table-sp-items">
+                            <td class="spec__table-sp-detail">自動操縦、植物生育モニタリング、農薬散布</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
 
 
-        <!-- 私たちが選ばれる3つの理由 -->
+        <!-- お問い合わせ-->
 
-        <section class="features">
-            <div class="features__container">
-                <h2 class="features__title">
-                    <span class="features__title-sub">Features</span>
-                    <span class="features__title-main">私たちが選ばれる3つの理由</span>
-                </h2>
-                <div class="features__wrapper">
-                    <div class="features__feature-item">
-                        <picture>
-                            <source srcset="/assets/image/price/price_feature_img_01.png" media="(min-width: 768px)">
-                            <img class="features__feature-image" src="/assets/image/price/price_feature_img_01_sp.png" alt="">
-                        </picture>
-                        <h3 class="features__feature-title">農業の未来と革新的デザイン性で最新鋭の機能を完備</h3>
-                    </div>
-                    <div class="features__feature-item">
-                        <picture>
-                            <source srcset="/assets/image/price/price_feature_img_02.png" media="(min-width: 768px)">
-                            <img class="features__feature-image" src="/assets/image/price/price_feature_img_02_sp.png" alt="">
-                        </picture>
-                        <h3 class="features__feature-title">ビッグデータを駆使して、省電力・効率化を実現</h3>
-                    </div>
-                    <div class="features__feature-item">
-                        <picture>
-                            <source srcset="/assets/image/price/price_feature_img_03.png" media="(min-width: 768px)">
-                            <img class="features__feature-image" src="/assets/image/price/price_feature_img_03_sp.png" alt="">
-                        </picture>
-                        <h3 class="features__feature-title">自動運転技術を搭載したロボットで一年中稼働することができる</h3>
-                    </div>
-                </div>
+        <div class="contact--price">
+            <div class="contact--price__button">
+                <a href="/contact" class="contact--price__link">お問い合わせ</a>
             </div>
-        </section>
-
-
-        <!-- 製品・サービス紹介 -->
-
-        <section class="products">
-            <div class="products__container">
-                <h2 class="products__title">
-                    <span class="products__title-sub">Products / Service</span>
-                    <span class="products__title-main">製品・サービス紹介</span>
-                </h2>
-                <div class="products__wrapper">
-                    <a href="#" class="products__product-link">
-                        <div class="products__product-item products__item--01">
-                            <img class="products__product-image products__image--01" src="/assets/image/price/price_product_img_01.png" alt="">
-                            <h3 class="products__product-title products__title--01">エネルギーセイバー<br>農業ドローン</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="products__product-link">
-                        <div class="products__product-item products__item--02">
-                            <img class="products__product-image products__image--02" src="/assets/image/price/price_product_img_02.png" alt="">
-                            <h3 class="products__product-title products__title--02">プログレッシブ<br class="sp-inline-only">ハー<br class="pc-inline-only">ベストボット</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="products__product-link">
-                        <div class="products__product-item products__item--03">
-                            <img class="products__product-image products__image--03" src="/assets/image/price/price_product_img_03.png" alt="">
-                            <h3 class="products__product-title products__title--03">フューチャーフ<br class="pc-inline-only">ァーム<br class="sp-inline-only">マスター</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="products__product-link">
-                        <div class="products__product-item products__item--04">
-                            <img class="products__product-image products__image--04" src="/assets/image/price/price_product_img_04.png" alt="">
-                            <h3 class="products__product-title products__title--04">ミラクルグロー<br class="pc-inline-only">アシス<br class="sp-inline-only">ト</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="products__product-link">
-                        <div class="products__product-item products__item--05">
-                            <img class="products__product-image products__image--05" src="/assets/image/price/price_product_img_05.png" alt="">
-                            <h3 class="products__product-title products__title--05">インテリジェン<br class="pc-inline-only">トプラ<br class="sp-inline-only">ンター</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- お客様の事例紹介 -->
-
-        <section class="cases">
-            <div class="cases__container">
-                <h2 class="cases__title">
-                    <span class="cases__title-sub">Case</span>
-                    <span class="cases__title-main">お客様の事例紹介</span>
-                </h2>
-                <div class="cases__wrapper">
-                    <a href="#" class="cases__case-link">
-                        <div class="cases__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_case_img_01.png" media="(min-width: 768px)">
-                                <img class="cases__case-image" src="/assets/image/price/price_case_img_01_sp.png" alt="">
-                            </picture>
-                            <h3 class="cases__case-title">利用開始後約1年で売り上げが150％増加</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="cases__case-link">
-                        <div class="cases__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_case_img_02.png" media="(min-width: 768px)">
-                                <img class="cases__case-image" src="/assets/image/price/price_case_img_02_sp.png" alt="">
-                            </picture>
-                            <h3 class="cases__case-title">無駄な作業が減り、30％のコストカットに成功</h3>
-                        </div>
-                    </a>
-                    <a href="#" class="cases__case-link">
-                        <div class="cases__item">
-                            <picture>
-                                <source srcset="/assets/image/price/price_case_img_03.png" media="(min-width: 768px)">
-                                <img class="cases__case-image" src="/assets/image/price/price_case_img_03_sp.png" alt="">
-                            </picture>
-                            <h3 class="cases__case-title">24時間対応のサポートデスクがあるのも安心です</h3>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- お知らせ-->
-
-        <div class="news">
-            <div class="news__container">
-                <h2 class="news__title">
-                    <span class="news__title-sub">News</span>
-                    <span class="news__title-main">お知らせ</span>
-                </h2>
-                <!-- <div class="new__wrapper"> -->
-                <dl class="news__item-group">
-                    <div class="news__item">
-                        <dt class="news__date">2023.05.15<span class="news__tag">お知らせ</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a>
-                        </dd>
-                    </div>
-                    <div class="news__item">
-                        <dt class="news__date">2023.04.05<span class="news__tag">ニュースリリース</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a>
-                        </dd>
-                    </div>
-                    <div class="news__item">
-                        <dt class="news__date">2023.03.12<span class="news__tag">ニュースリリース</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">害虫撃退！キラメキファームの自然環境に優しい取り組み</a>
-                        </dd>
-                    </div>
-                    <div class="news__item">
-                        <dt class="news__date">2023.02.01<span class="news__tag">お知らせ</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a>
-                        </dd>
-                    </div>
-                    <div class="news__item">
-                        <dt class="news__date">2023.01.25<span class="news__tag">ニュースリリース</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">キラメキファーム、無農薬野菜で子供たちの未来を支える</a>
-                        </dd>
-                    </div>
-                    <div class="news__item">
-                        <dt class="news__date">2023.01.08<span class="news__tag">お知らせ</span></dt>
-                        <dd class="news__data">
-                            <a href="#" class="news__link">キラメキ農法で収穫量2倍！革新的な農業技術が話題</a>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
-            <div class="news__news-button">
-                <a href="/news" class="news__news-link">ニュース一覧へ</a>
-            </div>
-            <!-- </div> -->
         </div>
+
 
     </main>
 
     <!-- フッター -->
 
     <footer class="footer">
-        <div class="footer__footer-container">
+        <div class="footer__container">
             <ul class="footer__footer-list">
-                <li class="footer__footer-list-item"><a href="/company/" class="footer__footer-link footer__footer-link-bar">価格・スペック</a></li>
-                <li class="footer__footer-list-item"><a href="/contact/" class="footer__footer-link">よくあるご質問</a></li>
+                <li class="footer__footer-list-item footer__footer-link-bar"><a href="/price" class="footer__footer-link">価格・スペック</a></li>
+                <li class="footer__footer-list-item"><a href="/faq" class="footer__footer-link">よくあるご質問</a></li>
             </ul>
         </div>
     </footer>
 
 
-
     <!-- jsファイル -->
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/assets/script/main.js"></script>
 
 </body>
