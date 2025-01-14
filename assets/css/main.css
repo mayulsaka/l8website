@@ -247,10 +247,10 @@ li {
 	width: 100%;
 	height: 53.8461538462vw;
 	padding-right: 4.1025641026vw;
-	-webkit-transition: -webkit-transform ease 0.3s;
-	        transition: -webkit-transform ease 0.3s;
-	        transition:         transform ease 0.3s;
-	        transition:         transform ease 0.3s, -webkit-transform ease 0.3s;
+	-webkit-transition: -webkit-transform ease 0.6s;
+	        transition: -webkit-transform ease 0.6s;
+	        transition:         transform ease 0.6s;
+	        transition:         transform ease 0.6s, -webkit-transform ease 0.6s;
 }
 
 @media screen and (min-width: 768px) {
@@ -394,8 +394,8 @@ li {
 	display: block;
 	height: 0.5128205128vw;
 	margin: 0;
-	-webkit-transition: ease 0.3s;
-	        transition: ease 0.3s;
+	-webkit-transition: ease 0.6s;
+	        transition: ease 0.6s;
 	border-radius: 5.1282051282vw;
 	background-color: #000;
 }
@@ -845,6 +845,7 @@ li {
 	-ms-flex-pack: center;
 	justify-content: center;
 	width: 100%;
+	margin: auto;
 	padding: 8.2051282051vw 4.1025641026vw;
 	background: url(/assets/image/top/top_about_us_img_sp.png);
 	background-repeat: no-repeat;
@@ -864,16 +865,26 @@ li {
 		-webkit-box-pack: justify;
 		-ms-flex-pack: justify;
 		justify-content: space-between;
+		max-width: 81.25vw;
 		height: auto;
-		padding: 0 16.25vw 4.1025641026vw 7.1794871795vw;
+		padding: 0 0 1.3333333333vw 0;
 		padding-left: 0;
 		background: transparent;
+
+		-webkit-column-gap: 10.8333333333vw;
+		   -moz-column-gap: 10.8333333333vw;
+		        column-gap: 10.8333333333vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.about__wrapper {
-		padding: 0 12.1875rem 1rem 1.75rem;
+		max-width: 60.9375rem;
+		padding: 0 0 1rem 0;
+
+		-webkit-column-gap: 8.125rem;
+		   -moz-column-gap: 8.125rem;
+		        column-gap: 8.125rem;
 	}
 }
 
@@ -888,12 +899,12 @@ li {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	    flex-direction: column;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
 	width: 100%;
-	margin: auto;
-	padding: 3.3333333333vw 5.8974358974vw 4.8717948718vw 6.1538461538vw;
+	padding: 3.3333333333vw 0 4.8717948718vw 0;
+	text-align: left;
 	opacity: 0.8;
 	border-radius: 8.2051282051vw;
 	background-color: #fff;
@@ -902,9 +913,10 @@ li {
 @media screen and (min-width: 768px) {
 	.about__info {
 		width: 34.1666666667vw;
-		padding: 0;
 		padding-top: 0.3333333333vw;
+		padding-right: 0;
 		padding-bottom: 0.4166666667vw;
+		padding-left: 0;
 		border-radius: 0;
 		background: transparent;
 	}
@@ -919,63 +931,70 @@ li {
 }
 
 .about__info-title {
+	width: 79.7435897436vw;
 	margin-bottom: 1.7948717949vw;
-	text-align: left;
+	padding-right: 1.5384615385vw;
 	font-size: 4.6051282051vw;
 	font-weight: 700;
 	line-height: 1.77;
 
+	margin-inline: auto;
 	line-break: anywhere;
 }
 
 @media screen and (min-width: 768px) {
 	.about__info-title {
-		width: 33.3333333333vw;
+		width: 34.1666666667vw;
 		margin-bottom: 2.1666666667vw;
+		padding-right: 0.8333333333vw;
+		text-align: left;
 		font-size: 1.6666666667vw;
 		line-height: 1.77;
-
-		line-break: anywhere;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.about__info-title {
-		width: 25rem;
+		width: 25.625rem;
 		margin-bottom: 1.625rem;
 		font-size: 1.25rem;
 	}
 }
 
 .about__info-text {
+	width: 79.4871794872vw;
 	text-align: left;
 	font-size: 3.8717948718vw;
 	line-height: 1.73;
+
+	margin-inline: auto;
+	line-break: anywhere;
 }
 
 @media screen and (min-width: 768px) {
 	.about__info-text {
-		font-size: 1.2333333333vw;
+		width: 34.1666666667vw;
+		font-size: 1.2458333333vw;
 		line-height: 1.77;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.about__info-text {
-		font-size: 0.925rem;
+		width: 25.625rem;
+		font-size: 0.934375rem;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	.about__image {
-		width: 32.5vw;
-		background: transparent;
+		min-width: 34.1666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.about__image {
-		width: 24.375rem;
+		min-width: 25.625rem;
 	}
 }
 
@@ -1153,10 +1172,12 @@ li {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	width: 100%;
 	width: 91.7948717949vw;
 	height: 74.1025641026vw;
 	margin: auto;
 	border-radius: 8.2051282051vw;
+	background-color: #fff;
 	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 	        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
@@ -1167,7 +1188,6 @@ li {
 		height: 23.3333333333vw;
 		padding-bottom: 2.0833333333vw;
 		border-radius: 2.6666666667vw;
-		background: transparent;
 	}
 }
 
@@ -1191,7 +1211,6 @@ li {
 	.features__feature-image {
 		width: 30.8333333333vw;
 		margin-bottom: 1vw;
-		background: transparent;
 	}
 }
 
@@ -1211,7 +1230,6 @@ li {
 	text-align: left;
 	border-bottom-right-radius: 8.2051282051vw;
 	border-bottom-left-radius: 8.2051282051vw;
-	background-color: #fff;
 	font-size: 4.6153846154vw;
 	font-weight: 700;
 	line-height: 1.75;
@@ -1602,26 +1620,26 @@ li {
 
 .products .products__product-link:hover .products__product-title {
 	opacity: 1;
-	color: #000;
+	color: #168352;
 }
 
 /* お客様の事例紹介 */
 .cases {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 13.3333333333vw 4.1025641026vw 10.7692307692vw 4.1025641026vw;
+	padding: 13.3333333333vw 4.1025641026vw 11.5384615385vw 4.1025641026vw;
 	background-color: #f3f9f6;
 }
 
 @media screen and (min-width: 768px) {
 	.cases {
-		padding: 4.9166666667vw 1.6666666667vw 4.3333333333vw 1.6666666667vw;
+		padding: 4.9166666667vw 1.6666666667vw 4.5833333333vw 1.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.cases {
-		padding: 3.6875rem 1.25rem 3.25rem 1.25rem;
+		padding: 3.6875rem 1.25rem 3.4375rem 1.25rem;
 	}
 }
 
@@ -1734,7 +1752,7 @@ li {
 	width: 100%;
 	margin: auto;
 
-	row-gap: 4.8717948718vw;
+	row-gap: 6.0256410256vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -1791,22 +1809,24 @@ li {
 	bottom: 0;
 	width: 91.7948717949vw;
 	margin: auto;
+	padding-top: 0.5128205128vw;
 	padding-bottom: 2.1794871795vw;
 	text-align: left;
 	letter-spacing: 0.01em;
 	color: #09947b;
 	font-size: 4.6153846154vw;
 	font-weight: 700;
-	line-height: 1.7;
+	line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
 	.cases__case-title {
 		width: 30.8333333333vw;
+		padding-top: 0.1666666667vw;
 		padding-bottom: 0.8333333333vw;
 		letter-spacing: 0.02em;
 		font-size: 1.5541666667vw;
-		line-height: 1.77;
+		line-height: 1.65;
 	}
 }
 
@@ -1861,7 +1881,7 @@ li {
 
 .news__title {
 	margin: 0 auto;
-	margin-bottom: 5.1282051282vw;
+	margin-bottom: 1.2820512821vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -1954,7 +1974,6 @@ li {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	    flex-direction: column;
-	height: 15.3846153846vw;
 	padding-top: 4.1025641026vw;
 	border-bottom: 1px solid #ddd;
 }
@@ -1962,42 +1981,43 @@ li {
 @media screen and (min-width: 768px) {
 	.news__item {
 		-webkit-box-align: center;
+		-webkit-box-align: start;
 		align-items: center;
+		align-items: flex-start;
 		-ms-flex-align: center;
+		-ms-flex-align: start;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
 		    flex-direction: row;
-		height: 5.0833333333vw;
-		padding-top: 3.3333333333vw;
+		padding-top: 0.8333333333vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__item {
-		height: 3.8125rem;
-		padding-top: 2.5rem;
+		padding-top: 0.625rem;
 	}
 }
 
 .news__item:not(:last-child) {
-	padding-bottom: 25.3846153846vw;
+	padding-bottom: 2.5641025641vw;
 }
 
 @media screen and (min-width: 768px) {
 	.news__item:not(:last-child) {
-		padding-bottom: 1.6666666667vw;
+		padding-bottom: 1.9166666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__item:not(:last-child) {
-		padding-bottom: 1.25rem;
+		padding-bottom: 1.4375rem;
 	}
 }
 
 .news__item:last-child {
-	padding-bottom: 19.2307692308vw;
+	padding-bottom: 2.5641025641vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -2014,26 +2034,10 @@ li {
 
 .news__link {
 	display: inline-block;
+	padding-top: 0.5128205128vw;
 	color: #09947b;
 	font-size: 3.8461538462vw;
 	font-weight: 700;
-}
-
-@media screen and (min-width: 768px) {
-	.news__link {
-		margin-left: 1.25vw;
-	}
-}
-
-@media screen and (min-width: 1200px) {
-	.news__link {
-		margin-left: 0.9375rem;
-	}
-}
-
-.news__link {
-	padding-top: 0.5128205128vw;
-	font-size: 3.8461538462vw;
 	line-height: 1.7;
 }
 
@@ -2046,15 +2050,14 @@ li {
 		align-items: flex-start;
 		-ms-flex-align: start;
 		margin-left: 2.0833333333vw;
-		padding-bottom: 2.9166666667vw;
 		font-size: 1.25vw;
+		line-height: 1;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__link {
 		margin-left: 1.5625rem;
-		padding-bottom: 2.1875rem;
 		font-size: 0.9375rem;
 	}
 }
@@ -2070,14 +2073,13 @@ li {
 	.news__date {
 		-ms-flex-negative: 0;
 		flex-shrink: 0;
-		padding-bottom: 0.1666666667vw;
+		margin-bottom: 0;
 		font-size: 1.1666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.news__date {
-		padding-bottom: 0.125rem;
 		font-size: 0.875rem;
 	}
 }
@@ -3448,7 +3450,7 @@ li {
 
 /* QA（よくあるご質問） */
 .faq {
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 9.7435897436vw 4.1025641026vw 38.9743589744vw 4.1025641026vw;
 }
@@ -3466,7 +3468,7 @@ li {
 }
 
 .accordion_container {
-	max-width: 100%;
+	width: 100%;
 	margin: 0 auto;
 	margin-bottom: 6.1538461538vw;
 	border: 1px solid #ccc;
@@ -3525,9 +3527,10 @@ li {
 }
 
 .q {
-	width: 11.2820512821vw;
+	width: 12.8205128205vw;
 	padding-top: 0.7692307692vw;
 	color: #168352;
+	font-family: "montserrat", sans-serif;
 	font-size: 6.9230769231vw;
 	font-weight: 700;
 	line-height: 1;
@@ -3535,9 +3538,7 @@ li {
 
 @media screen and (min-width: 768px) {
 	.q {
-		top: 1.9166666667vw;
-		left: 2.5vw;
-		width: 4vw;
+		width: 4.1666666667vw;
 		padding-top: 0.3333333333vw;
 		font-size: 2.25vw;
 	}
@@ -3545,9 +3546,7 @@ li {
 
 @media screen and (min-width: 1200px) {
 	.q {
-		top: 1.4375rem;
-		left: 1.875rem;
-		width: 3rem;
+		width: 3.125rem;
 		padding-top: 0.25rem;
 		font-size: 1.6875rem;
 	}
@@ -3556,6 +3555,12 @@ li {
 .accordion_title-text {
 	display: block;
 	width: 58.9743589744vw;
+}
+
+@media screen and (min-width: 768px) {
+	.accordion_title-text {
+		width: auto;
+	}
 }
 
 .accordion_title {
