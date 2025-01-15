@@ -59,20 +59,12 @@ a:hover {
 	opacity: 0.8;
 }
 
-.inactive-link {
-	pointer-events: none;
-}
-
 img {
 	vertical-align: bottom;
 }
 
 li {
 	list-style: none;
-}
-
-.line-break {
-	display: inline-block;
 }
 
 .sp-only {
@@ -234,7 +226,6 @@ li {
 .header__nav {
 	position: absolute;
 	top: 16.1538461538vw;
-	left: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -247,10 +238,9 @@ li {
 	width: 100%;
 	height: 53.8461538462vw;
 	padding-right: 4.1025641026vw;
-	-webkit-transition: -webkit-transform ease 0.6s;
-	        transition: -webkit-transform ease 0.6s;
-	        transition:         transform ease 0.6s;
-	        transition:         transform ease 0.6s, -webkit-transform ease 0.6s;
+	-webkit-transition: opacity 0.3s linear;
+	        transition: opacity 0.3s linear;
+	opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -265,6 +255,7 @@ li {
 		-webkit-transform: initial;
 		    -ms-transform: initial;
 		        transform: initial;
+		opacity: 1;
 
 		gap: 3.8333333333vw;
 	}
@@ -394,8 +385,8 @@ li {
 	display: block;
 	height: 0.5128205128vw;
 	margin: 0;
-	-webkit-transition: ease 0.6s;
-	        transition: ease 0.6s;
+	-webkit-transition: opacity 0.3s linear;
+	        transition: opacity 0.3s linear;
 	border-radius: 5.1282051282vw;
 	background-color: #000;
 }
@@ -413,9 +404,7 @@ li {
 }
 
 .header__nav.active {
-	-webkit-transform: translateX(-100%);
-	    -ms-transform: translateX(-100%);
-	        transform: translateX(-100%);
+	opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -571,7 +560,7 @@ li {
 	color: #fff;
 }
 
-/* -------------------- TOP -------------------- */
+/* -------------------- トップ -------------------- */
 /* メインビジュアル */
 .main-visual {
 	overflow: hidden;
@@ -1008,13 +997,13 @@ li {
 
 @media screen and (min-width: 768px) {
 	.features {
-		padding: 4.75vw 1.6666666667vw 5.4166666667vw 1.6666666667vw;
+		padding: 4.75vw 1.6666666667vw 5vw 1.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.features {
-		padding: 3.5625rem 1.25rem 4.0625rem 1.25rem;
+		padding: 3.5625rem 1.25rem 3.75rem 1.25rem;
 	}
 }
 
@@ -1047,14 +1036,14 @@ li {
 
 @media screen and (min-width: 768px) {
 	.features__title {
-		margin-bottom: 5vw;
+		margin-bottom: 4.5833333333vw;
 		font-size: 1.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.features__title {
-		margin-bottom: 3.75rem;
+		margin-bottom: 3.4375rem;
 		font-size: 1.25rem;
 	}
 }
@@ -1172,7 +1161,6 @@ li {
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	width: 100%;
 	width: 91.7948717949vw;
 	height: 74.1025641026vw;
 	margin: auto;
@@ -1185,7 +1173,7 @@ li {
 @media screen and (min-width: 768px) {
 	.features__feature-item {
 		width: 30.8333333333vw;
-		height: 23.3333333333vw;
+		height: 24.1666666667vw;
 		padding-bottom: 2.0833333333vw;
 		border-radius: 2.6666666667vw;
 	}
@@ -1194,36 +1182,39 @@ li {
 @media screen and (min-width: 1200px) {
 	.features__feature-item {
 		width: 23.125rem;
-		height: 17.5rem;
+		height: 18.125rem;
 		padding-bottom: 1.5625rem;
 		border-radius: 2rem;
 	}
 }
 
 .features__feature-image {
-	width: 91.7948717949vw;
+	position: absolute;
+	top: 0;
+	width: 100%;
 	margin: auto;
-	margin-bottom: 3.0769230769vw;
 	padding: 0;
 }
 
 @media screen and (min-width: 768px) {
 	.features__feature-image {
+		position: initial;
 		width: 30.8333333333vw;
-		margin-bottom: 1vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.features__feature-image {
 		width: 23.125rem;
-		margin-bottom: 0.75rem;
 	}
 }
 
 .features__feature-title {
+	position: absolute;
+	bottom: 0;
 	width: 91.7948717949vw;
 	margin: auto;
+	padding-top: 3.0769230769vw;
 	padding-right: 4.1025641026vw;
 	padding-bottom: 3.5897435897vw;
 	padding-left: 4.1025641026vw;
@@ -1237,10 +1228,12 @@ li {
 
 @media screen and (min-width: 768px) {
 	.features__feature-title {
+		position: initial;
 		width: 30.8333333333vw;
 		height: 7.6666666667vw;
+		padding-top: 1vw;
 		padding-right: 1.5vw;
-		padding-bottom: 1.6666666667vw;
+		padding-bottom: 2.9166666667vw;
 		padding-left: 1.6666666667vw;
 		border-bottom-right-radius: 2.6666666667vw;
 		border-bottom-left-radius: 2.6666666667vw;
@@ -1253,8 +1246,9 @@ li {
 	.features__feature-title {
 		width: 23.125rem;
 		height: 5.75rem;
+		padding-top: 0.75rem;
 		padding-right: 1.125rem;
-		padding-bottom: 1.25rem;
+		padding-bottom: 2.1875rem;
 		padding-left: 1.25rem;
 		border-bottom-right-radius: 2rem;
 		border-bottom-left-radius: 2rem;
@@ -1438,7 +1432,7 @@ li {
 	-webkit-box-pack: start;
 	-ms-flex-pack: start;
 	justify-content: flex-start;
-	width: 91.7948717949vw;
+	width: 100%;
 	height: 35.8974358974vw;
 	padding: 5.1282051282vw 6.4102564103vw 5.1282051282vw 6.4102564103vw;
 	border-radius: 6.1538461538vw;
@@ -1788,20 +1782,17 @@ li {
 .cases__case-image {
 	top: 0;
 	width: 91.7948717949vw;
-	margin-bottom: 1.7948717949vw;
 }
 
 @media screen and (min-width: 768px) {
 	.cases__case-image {
 		width: 30.8333333333vw;
-		margin-bottom: 0.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.cases__case-image {
 		width: 23.125rem;
-		margin-bottom: 0.5rem;
 	}
 }
 
@@ -1809,7 +1800,7 @@ li {
 	bottom: 0;
 	width: 91.7948717949vw;
 	margin: auto;
-	padding-top: 0.5128205128vw;
+	padding-top: 2.3076923077vw;
 	padding-bottom: 2.1794871795vw;
 	text-align: left;
 	letter-spacing: 0.01em;
@@ -1822,7 +1813,7 @@ li {
 @media screen and (min-width: 768px) {
 	.cases__case-title {
 		width: 30.8333333333vw;
-		padding-top: 0.1666666667vw;
+		padding-top: 0.8333333333vw;
 		padding-bottom: 0.8333333333vw;
 		letter-spacing: 0.02em;
 		font-size: 1.5541666667vw;
@@ -1833,6 +1824,7 @@ li {
 @media screen and (min-width: 1200px) {
 	.cases__case-title {
 		width: 23.125rem;
+		padding-top: 0.625rem;
 		padding-bottom: 0.625rem;
 		font-size: 1.165625rem;
 	}
@@ -1881,7 +1873,7 @@ li {
 
 .news__title {
 	margin: 0 auto;
-	margin-bottom: 1.2820512821vw;
+	margin-bottom: 5.1282051282vw;
 }
 
 @media screen and (min-width: 768px) {
@@ -2737,21 +2729,18 @@ li {
 }
 
 .feature--price__feature-image {
-	width: 91.7948717949vw;
-	margin-bottom: 1.7948717949vw;
+	width: 100%;
 }
 
 @media screen and (min-width: 768px) {
 	.feature--price__feature-image {
 		width: 20.5vw;
-		margin-bottom: 0.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.feature--price__feature-image {
 		width: 15.375rem;
-		margin-bottom: 0.5rem;
 	}
 }
 
@@ -2759,6 +2748,7 @@ li {
 	bottom: 0;
 	width: 91.7692307692vw;
 	margin: auto;
+	padding-top: 1.7948717949vw;
 	padding-bottom: 2.5641025641vw;
 	text-align: left;
 	letter-spacing: 0.01em;
@@ -2772,6 +2762,7 @@ li {
 @media screen and (min-width: 768px) {
 	.feature--price__feature-title {
 		width: 20.5vw;
+		padding-top: 0.6666666667vw;
 		padding-bottom: 0.8333333333vw;
 		font-size: 1.5vw;
 		line-height: 1.77;
@@ -2781,6 +2772,7 @@ li {
 @media screen and (min-width: 1200px) {
 	.feature--price__feature-title {
 		width: 15.375rem;
+		padding-top: 0.5rem;
 		padding-bottom: 0.625rem;
 		font-size: 1.125rem;
 	}
@@ -2914,18 +2906,18 @@ li {
 .spec {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 6.4102564103vw 4.1025641026vw 12.8205128205vw 4.1025641026vw;
+	padding: 6.4102564103vw 4.1025641026vw 13.3333333333vw 4.1025641026vw;
 }
 
 @media screen and (min-width: 768px) {
 	.spec {
-		padding: 2.5vw 1.6666666667vw 5.8333333333vw 1.6666666667vw;
+		padding: 2.5vw 1.6666666667vw 6vw 1.6666666667vw;
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	.spec {
-		padding: 1.875rem 1.25rem 4.375rem 1.25rem;
+		padding: 1.875rem 1.25rem 4.5rem 1.25rem;
 	}
 }
 
@@ -3134,12 +3126,24 @@ li {
 	font-size: 4.1025641026vw;
 }
 
-/* お問い合わせ（価格・スペック） */
 .contact--price {
-	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-ms-flex-align: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	max-width: 100%;
+	height: 92.3076923077vw;
 	margin: 0 auto;
-	padding: 0 4.1025641026vw 92.3076923077vw 4.1025641026vw;
+	padding: 0;
 	background-color: #000;
 	background-image: url(/assets/image/price/price_contact_img_sp.jpg);
 	background-repeat: no-repeat;
@@ -3149,7 +3153,7 @@ li {
 
 @media screen and (min-width: 768px) {
 	.contact--price {
-		padding: 0 1.6666666667vw 37.5vw 1.6666666667vw;
+		height: 37.5vw;
 		background-color: rgb(0, 0, 0);
 		background-image: url(/assets/image/price/price_contact_img.jpg);
 		background-repeat: no-repeat;
@@ -3160,14 +3164,11 @@ li {
 
 @media screen and (min-width: 1200px) {
 	.contact--price {
-		padding: 0 1.25rem 28.125rem 1.25rem;
+		height: 28.125rem;
 	}
 }
 
 .contact--price__link {
-	position: absolute;
-	top: 50%;
-	left: 50%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -3180,9 +3181,6 @@ li {
 	width: 91.7948717949vw;
 	height: 20.5128205128vw;
 	margin: auto;
-	-webkit-transform: translate(-50%, -50%);
-	    -ms-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
 	text-align: center;
 	color: #fff;
 	border: 2px solid #fff;
@@ -3527,10 +3525,9 @@ li {
 }
 
 .q {
-	width: 12.8205128205vw;
+	width: 11.0256410256vw;
 	padding-top: 0.7692307692vw;
 	color: #168352;
-	font-family: "montserrat", sans-serif;
 	font-size: 6.9230769231vw;
 	font-weight: 700;
 	line-height: 1;
@@ -3538,7 +3535,7 @@ li {
 
 @media screen and (min-width: 768px) {
 	.q {
-		width: 4.1666666667vw;
+		width: 3.5833333333vw;
 		padding-top: 0.3333333333vw;
 		font-size: 2.25vw;
 	}
@@ -3546,7 +3543,7 @@ li {
 
 @media screen and (min-width: 1200px) {
 	.q {
-		width: 3.125rem;
+		width: 2.6875rem;
 		padding-top: 0.25rem;
 		font-size: 1.6875rem;
 	}
