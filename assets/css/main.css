@@ -1940,6 +1940,9 @@ li {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: start;
+	align-items: flex-start;
+	-ms-flex-align: start;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -1950,12 +1953,6 @@ li {
 
 @media screen and (min-width: 768px) {
 	.news__item {
-		-webkit-box-align: center;
-		-webkit-box-align: start;
-		align-items: center;
-		align-items: flex-start;
-		-ms-flex-align: center;
-		-ms-flex-align: start;
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-ms-flex-direction: row;
@@ -2847,6 +2844,7 @@ li {
 
 .price__price {
 	text-align: left;
+	color: #168352;
 	font-size: 8.2051282051vw;
 	font-weight: 700;
 }
@@ -2864,6 +2862,7 @@ li {
 }
 
 .price__tax {
+	color: #168352;
 	font-size: 4.1025641026vw;
 	font-weight: 700;
 }

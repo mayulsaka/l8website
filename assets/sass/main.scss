@@ -1427,12 +1427,11 @@ li {
 
 	&__item {
 		display: flex;
+		align-items: flex-start;
 		flex-direction: column;
 		padding-top: vw(16);
 		border-bottom: 1px solid #ddd;
 		@include mq() {
-			align-items: center;
-			align-items: flex-start;
 			flex-direction: row;
 			padding-top: vwt(16);
 		}
@@ -2063,6 +2062,7 @@ li {
 
 	&__price {
 		text-align: left;
+		color: #168352;
 		font-size: vw(32);
 		font-weight: 700;
 		@include mq() {
@@ -2074,6 +2074,7 @@ li {
 	}
 
 	&__tax {
+		color: #168352;
 		font-size: vw(16);
 		font-weight: 700;
 		@include mq() {
