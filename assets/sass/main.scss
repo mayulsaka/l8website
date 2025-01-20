@@ -863,18 +863,20 @@ li {
 		margin: auto;
 		border-radius: vw(32);
 		background-color: #fff;
-		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+		box-shadow: 0 vw(5) vw(15) rgba(0, 0, 0, 0.08);
 		@include mq() {
 			width: vwt(370);
 			height: vwt(320);
 			padding-bottom: vwt(25);
 			border-radius: vwt(32);
+			box-shadow: 0 vwt(5) vwt(15) rgba(0, 0, 0, 0.08);
 		}
 		@include mq(lg) {
 			width: px2Rem(370);
 			height: px2Rem(320);
 			padding-bottom: px2Rem(25);
 			border-radius: px2Rem(32);
+			box-shadow: 0 px2Rem(5) px2Rem(15) rgba(0, 0, 0, 0.08);
 		}
 	}
 
