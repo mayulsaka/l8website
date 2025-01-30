@@ -1568,18 +1568,15 @@ li {
 	}
 
 	&__news-link:hover {
-		margin-top: vw(30);
-		margin-bottom: vw(5);
+		transform: translateY(vw(5));
 		opacity: 1;
 		color: #fff;
 		box-shadow: none;
 		@include mq() {
-			margin-top: vwt(33);
-			margin-bottom: vwt(5);
+			transform: translateY(vwt(5));
 		}
 		@include mq(lg) {
-			margin-top: px2Rem(33);
-			margin-bottom: px2Rem(5);
+			transform: translateY(px2Rem(5));
 		}
 	}
 }
@@ -1832,16 +1829,6 @@ li {
 	}
 }
 
-.swiper-pagination {
-	margin-bottom: vw(-2);
-	@include mq() {
-		margin-bottom: vwt(10);
-	}
-	@include mq(lg) {
-		margin-bottom: px2Rem(10);
-	}
-}
-
 .swiper-pagination-bullet {
 	opacity: 1;
 	color: #ececec;
@@ -1867,6 +1854,15 @@ li {
 	}
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+	bottom: var(--swiper-pagination-bottom, vw(6));
+	@include mq() {
+		bottom: var(--swiper-pagination-bottom, vwt(15));
+	}
+	@include mq(lg) {
+		bottom: var(--swiper-pagination-bottom, px2Rem(15));
+	}
+}
 
 /* 特徴（価格・スペック） */
 
@@ -2611,30 +2607,26 @@ li {
 	opacity: 0.8;
 }
 
-.icon_wrap {
+.icon-wrap {
 	position: absolute;
-	top: vw(35);
+	top: vw(15);
 	right: vw(12);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	box-sizing: border-box;
 	width: vw(40);
 	height: vw(40);
-	margin-top: vw(-20);
-	@include mq() {
-		top: vwt(37);
+	text-align: right;@include mq() {
+		top: vwt(15);
 		right: vwt(20);
 		width: vwt(40);
 		height: vwt(40);
-		margin-top: vwt(-20);
-	}
+	};
 	@include mq(lg) {
-		top: px2Rem(37);
+		top: px2Rem(15);
 		right: px2Rem(20);
 		width: px2Rem(40);
 		height: px2Rem(40);
-		margin-top: px2Rem(-20);
 	}
 }
 
@@ -2653,7 +2645,7 @@ li {
 	}
 }
 
-.accordion_title.open .icon_wrap {
+.accordion_title.open .icon-wrap {
 	transform: rotate(-315deg);
 }
 
@@ -2700,11 +2692,10 @@ li {
 	}
 }
 
-.accordion_title.open .icon_wrap .icon:before {
+.accordion_title.open .icon-wrap .icon:before {
 	content: none;
 }
-
-.accordion_title.open .icon_wrap .icon:after {
+.accordion_title.open .icon-wrap .icon:after {
 	transform: rotate(-45deg);
 }
 
